@@ -1,0 +1,33 @@
+{
+  "name": "@opendsa/algorithms",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./searching": {
+      "types": "./src/searching/index.ts",
+      "default": "./src/searching/index.ts"
+    },
+    "./sorting": {
+      "types": "./src/sorting/index.ts",
+      "default": "./src/sorting/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@opendsa/types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "vitest": "^2.0.0"
+  }
+}
